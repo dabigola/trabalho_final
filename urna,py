@@ -1,0 +1,23 @@
+voto_betinha = 0
+voto_neuma = 0 
+
+while True:
+    print('\nURNA ELETRÔNICA')
+    print('=' * 30)
+    print(f'''\nMenu de votação:
+          1.votos de \033[32mbetinha\033[m:{voto_betinha}
+          2.votos de \033[31mneuma\033[m:{voto_neuma}
+          3.sair da urna''')
+    
+    
+    votos = int(input('Voto: '))
+    if votos == 1:
+        voto_betinha += 1
+    elif votos == 2:
+        voto_neuma += 1
+    elif votos == 3:
+        print('saindo da urna')
+        break
+    else:
+        print ('erro, tente denovo')
+        continue
