@@ -80,9 +80,8 @@ def menu():
             print("Opção inválida, tente novamente.")
 
 def main():
-    """Executa o fluxo principal do programa."""
     menu()
-    print("\nExecução concluída.")
+    print("\nVoce saiu do programa.")
 
 if __name__ == "__main__":
     main()
