@@ -3,7 +3,6 @@ import random
 alunos = {} 
 
 def cadastrar_aluno(nome, notas):
-    """Cadastra um novo aluno com uma lista de notas."""
     if nome in alunos:
         print("Aluno já cadastrado.")
     else:
@@ -11,7 +10,6 @@ def cadastrar_aluno(nome, notas):
         print(f"Aluno {nome} cadastrado com sucesso!")
 
 def remover_aluno(nome):
-    """Remove um aluno do dicionário."""
     if nome in alunos:
         del alunos[nome]
         print(f"Aluno {nome} removido com sucesso!")
@@ -19,14 +17,12 @@ def remover_aluno(nome):
         print("Aluno não encontrado.")
 
 def mostrar_notas(nome):
-    """Mostra as notas de um aluno."""
     if nome in alunos:
         print(f"Notas de {nome}: {alunos[nome]}")
     else:
         print("Aluno não encontrado.")
 
 def melhor_aluno():
-    """Encontra o aluno com a melhor média."""
     if not alunos:
         print("Nenhum aluno cadastrado.")
         return
@@ -35,7 +31,6 @@ def melhor_aluno():
     print(f"Melhor aluno: {melhor} com média {media:.2f}")
 
 def cadastrar_notas():
-    """Captura notas do usuário para cadastrar um novo aluno."""
     notas = []
     while True:
         try:
@@ -51,7 +46,6 @@ def cadastrar_notas():
     return notas
 
 def menu():
-    """Exibe um menu de opções para interagir com o programa."""
     while True:
         print("\n1. Cadastrar aluno")
         print("2. Remover aluno")
